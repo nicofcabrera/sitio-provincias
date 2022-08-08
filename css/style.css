@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+nav img{
+  width: 3rem;
+  height: 2rem;
+}
+
+.hero-image{
+  background-image: url(/img/prueba-hero.jpeg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin: 2em 0;
+}
+
+.carousel-inner img{
+  height: 200px;
+}
+
+form {
+  width: 75%;
+}
+
+form button{
+  background-color: cadetblue;
+  color: black;
+}
+
+.separador{
+  margin-bottom: 7em;
+}
+
+
+/* ############ MEDIAS QUERIES TABLET ######## */
+@media all and (min-width: 768px){
+  .carousel{
+    width: 80%;
+  }
+
+  .carousel-inner img{
+    height: 300px;
+  }
+
+  form{
+    width: 50%;
+  }
+
+  .form-btn{
+    width: 50%;
+    margin: 1em auto;
+  }
+  
+  .separador{
+    margin-bottom: 10em;
+  }
+  
+}
+
+@media all and (min-width: 920px){
+  .hero-image{
+    height: 80vh;
+    background-size: contain;
+  }
+
+  .carousel{
+    width: 50%;
+  }
+  
+  .carousel-inner img{
+    height: 400px;
+  }
+  
+  section .table{
+    width: 75%;
+  }
+  
+}
