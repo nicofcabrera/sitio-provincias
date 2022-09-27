@@ -1,239 +1,374 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon-arg.ico" type="image/x-icon">
-  <title>TusProvincias.com - Información de Argentina al alcance de un click</title>
-</head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon-arg.ico" type="image/x-icon" />
+    <title>
+      TusProvincias.com - Información de Argentina al alcance de un click
+    </title>
+  </head>
 
-<body class="bg-dark text-white">
-  <!-- ##### NAVEGACION ####### -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-opacity-10">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3" href="#">
-        <img src="img/logo-argentina.png" alt="logo-web" class="d-inline-block align-text-top">
-        TusProvincias.com
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#galeria">Galeria</a>
+  <body class="bg-dark text-white">
+    <!-- ##### NAVEGACION ####### -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light bg-opacity-10">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#">
+          <img
+            src="img/logo-argentina.png"
+            alt="logo-web"
+            class="d-inline-block align-text-top"
+          />
+          TusProvincias.com
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#galeria"
+                >Galeria</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#tabla">Top Provincias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#form">Agrega tu provincia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- ###### INTRODUCCIÓN ###### -->
+      <section class="separador">
+        <div
+          class="hero-image d-flex justify-content-center align-items-center"
+        >
+          <h1>Bienvenid@s</h1>
+        </div>
+        <article class="container text-center">
+          <p>
+            TusProvincias.com proporciona información y opiniones sobre bienes y
+            servicios de ciudades de Argentina. Esta información es utilizada
+            por sus usuarios para conocer lugares de nuestro país y planificar
+            sus viajes.
+          </p>
+          <p>
+            TusProvincias.com es una guía de actividades de turismo activo en
+            Argentina, conectamos productos y servicios con usuarios de
+            Internet, donde pueden encontrar deportes, aventuras o actividades
+            de ocio en todo el país. Además, somos un portal de información de
+            actividades culturales y / o patrimoniales realizadas durante el año
+            en todos los destinos de Argentina.
+          </p>
+          <p>
+            Los datos e información vertidos a nuestro sitio están en constante
+            crecimiento y renovación.
+          </p>
+          <p>
+            Te invitamos a conocer Argentina a través de nuestro sitio web.
+            Estamos a un click de cientos de maravillas que atesora nuestro
+            país.
+          </p>
+          <p>¡Argentina te espera!</p>
+          <p>El equipo de TusProvincias.com</p>
+          <a
+            href="mailto:hola@tusprovincias.com"
+            class="text-decoration-none text-info"
+            >hola@tusprovincias.com</a
+          >
+        </article>
+      </section>
+
+      <!-- ###### CAROUSEL ####### -->
+      <section
+        id="carouselExampleCaptions"
+        class="carousel slide container separador"
+        data-bs-ride="carousel"
+      >
+        <h2 class="text-center mb-4" id="galeria">Galeria</h2>
+        <article class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </article>
+        <article class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/salta.jpg"
+              class="d-block w-100"
+              alt="imagen de salta"
+            />
+            <div class="carousel-caption">
+              <h5>Salta</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/jujuy.webp"
+              class="d-block w-100"
+              alt="imagen de jujuy"
+            />
+            <div class="carousel-caption">
+              <h5>Jujuy</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/mendoza.jpg"
+              class="d-block w-100"
+              alt="imagen de mendoza"
+            />
+            <div class="carousel-caption">
+              <h5>Mendoza</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/san-luis.jpg"
+              class="d-block w-100"
+              alt="imagen de san luis"
+            />
+            <div class="carousel-caption">
+              <h5>San Luis</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/cordoba.jpg"
+              class="d-block w-100"
+              alt="imagen de cordoba"
+            />
+            <div class="carousel-caption">
+              <h5>Cordoba</h5>
+            </div>
+          </div>
+        </article>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <!-- ##### TABLA ###### -->
+      
+      <section class="table-responsive container">
+        <h2 class="text-center" id="tabla">Provincias</h2>
+        <table class="table caption-top table-dark table-hover border text-center align-middle table-responsive mx-lg-auto">
+          <caption class="text-mg-center text-white">Top 5 Provincias con hermosos paisajes.</caption>
+          <thead>
+            <tr class="table-light">
+              <th scope="col">Nombre</th>
+              <th scope="col">Capital</th>
+              <th scope="col">Superficie</th>
+              <th scope="col">Habitantes</th>
+              <th scope="col">Localidades</th>
+              <th scope="col">Gobernador</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td>Salta</td>
+              <td>Salta</td>
+              <td>155.488 Km<sup>2</sup></td>
+              <td>1.214.441</td>
+              <td>Cachi, Cafayate, Capital, Cerrillos, etc.</td>
+              <td>Gustavo Sáenz</td>
+            </tr>
+            <tr>
+              <td>Jujuy</td>
+              <td>San Salvador de Jujuy</td>
+              <td>53.219 Km<sup>2</sup></td>
+              <td>673.307</td>
+              <td>Abra Pampa, Yala, Tumbaya, Uquia, etc.</td>
+              <td>Gerardo Morales</td>
+            </tr>
+            <tr>
+              <td>San Luis</td>
+              <td>San Luis</td>
+              <td>76.748 Km<sup>2</sup></td>
+              <td>432.310</td>
+              <td>
+                S. Francisco del Monte, Villa Mercedes, Merlo, Lujan, etc.
+              </td>
+              <td>Alberto José Rodríguez Saá</td>
+            </tr>
+            <tr>
+              <td>Mendoza</td>
+              <td>Mendoza</td>
+              <td>148.827 Km<sup>2</sup></td>
+              <td>1.738.929</td>
+              <td>Guaymallen, Potrerillos, San Rafael, Tunuyan, etc.</td>
+              <td>Rodolfo Suarez</td>
+            </tr>
+            <tr>
+              <td>Cordoba</td>
+              <td>Cordoba</td>
+              <td>165.321 Km<sup>2</sup></td>
+              <td>3.308.876</td>
+              <td>Rio Cuarto, Villa Allende, Calmayo, Unquillo, etc.</td>
+              <td>Juan Schiaretti</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="table-light">
+              <td colspan="7" class="fst-italic">
+                <small>*Los datos son del censo 2010</small>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- ######## FORMULARIO ####### -->
+      <section class="container mt-5 separador">
+        <article class="mb-lg-4 mb-md-5">
+          <h2>¿Queres agregar una provincia?</h2>
+          <p>
+            Te animamos agregar una provincia que te parezca que no debe faltar
+            en el top de las que tienen el mejor paisaje.
+          </p>
+        </article>
+        <form class="p-2 mx-auto row text-center" onsubmit="return false;">
+          <legend class="mb-3" id="form">Agregar Provincia</legend>
+          <label for="lbl-pcia" class="col-lg-3 text-lg-end">Provincia</label>
+          <input type="text" class="col-lg-7" id="lbl-pcia" maxlength="19" placeholder="Ej: Tucumán."
+          />
+          <p class="form-text">Agrega la provincia.</p>
+          <label for="lbl-cap" class="col-lg-3 text-lg-end">Capital</label>
+          <input type="text" class="col-lg-7" id="lbl-cap" placeholder="Ej: S.M. de Tucumán" />
+          <p class="form-text">Agrega la capital.</p>
+          <label for="lbl-sup" class="col-lg-3 text-lg-end">Superficie</label>
+          <input type="text" class="col-lg-7" id="lbl-sup" maxlength="19" placeholder="Ej: 15000"/>
+          <p class="form-text">Agrega la superficie.</p>
+          <label for="lbl-hab" class="col-lg-3 text-lg-end">Habitantes</label>
+          <input type="text" class="col-lg-7" id="lbl-hab" maxlength="7" placeholder="Ej: 200000" required/>
+          <p class="form-text">Agrega el N° de habitantes.</p>
+          <label for="lbl-loc" class="col-lg-3 text-lg-end">Localidades</label>
+          <input type="text" class="col-lg-7" id="lbl-loc" maxlength="30" placeholder="Ej: Leales." required/>
+          <p class="form-text">Agrega la localidad.</p>
+          <label for="lbl-gob" class="col-lg-3 text-lg-end">Gobernador</label>
+          <input type="text" class="col-lg-7" id="lbl-gob" maxlength="25" placeholder="Ej: Goku."/>
+          <p class="form-text">Agrega el gobernador.</p>
+          <button type="reset" class="form-btn" id="button-1">Sumar a la tabla</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- ####### FOOTER ##### -->
+    <footer class="bg-light bg-opacity-25 p-4">
+      <section
+        class="d-flex flex-column flex-md-row justify-content-md-between"
+      >
+        <article>
+          <h2>Contactenos</h2>
+          <p class="m-0">Email</p>
+          <a
+            href="mailto:hola@tusprovincias.com"
+            class="text-decoration-none text-info"
+            >hola@tusprovincias.com</a
+          >
+          <p class="m-0">Tel</p>
+          <a href="tel:+54123123" class="text-decoration-none text-info"
+            >+54123123</a
+          >
+        </article>
+        <ul class="mt-4 p-2">
+          <li>
+            <a href="#" class="text-decoration-none text-info"
+              >Sobre nosotros</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#tabla">Top Provincias</a>
+          <li>
+            <a href="#" class="text-decoration-none text-info"
+              >Conoce al equipo</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#form">Agrega tu provincia</a>
+          <li>
+            <a href="#" class="text-decoration-none text-info"
+              >Amigos de TusProvincias.com</a
+            >
           </li>
         </ul>
-      </div>
-    </div>
-  </nav> 
-  <main>
-    <!-- ###### INTRODUCCIÓN ###### -->
-    <section class="separador">
-      <div class="hero-image d-flex justify-content-center align-items-center">
-        <h1>Bienvenid@s</h1>
-      </div>
-      <article class="container text-center">
-        <p>TusProvincias.com proporciona información y opiniones sobre bienes y servicios de ciudades de Argentina. Esta información es utilizada por sus usuarios para conocer lugares de nuestro país y planificar sus viajes.
-        </p>
-        <p>TusProvincias.com es una guía de actividades de turismo activo en Argentina, conectamos productos y servicios con usuarios de Internet, donde pueden encontrar deportes, aventuras o actividades de ocio en todo el país. Además, somos un portal de información de actividades culturales y / o patrimoniales realizadas durante el año en todos los destinos de Argentina.</p>
-        <p>Los datos e información vertidos a nuestro sitio están en constante crecimiento y renovación.
-        </p>
-        <p>Te invitamos a conocer Argentina a través de nuestro sitio web. Estamos a un click de cientos de maravillas que atesora nuestro país.
-        </p>
-        <p>¡Argentina te espera!</p>
-        <p>El equipo de TusProvincias.com</p>
-        <a href="mailto:hola@tusprovincias.com" class="text-decoration-none text-info">hola@tusprovincias.com</a>
-      </article>
-    </section>
+      </section>
+      <p class="m-0 pt-2 text-md-end">
+        &copy Realizado por
+        <a href="#" class="text-decoration-none text-info">Nicolas Cabrera</a>
+      </p>
+    </footer>
 
-    <!-- ###### CAROUSEL ####### -->
-    <section id="carouselExampleCaptions" class="carousel slide container separador" data-bs-ride="carousel">
-      <h2 class="text-center mb-4" id="galeria">Galeria</h2>
-      <article class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      </article>
-      <article class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/salta.jpg" class="d-block w-100" alt="imagen de salta">
-          <div class="carousel-caption ">
-            <h5>Salta</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/jujuy.webp" class="d-block w-100" alt="imagen de jujuy">
-          <div class="carousel-caption ">
-            <h5>Jujuy</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/mendoza.jpg" class="d-block w-100" alt="imagen de mendoza">
-          <div class="carousel-caption ">
-            <h5>Mendoza</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/san-luis.jpg" class="d-block w-100" alt="imagen de san luis">
-          <div class="carousel-caption ">
-            <h5>San Luis</h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/cordoba.jpg" class="d-block w-100" alt="imagen de cordoba">
-          <div class="carousel-caption ">
-            <h5>Cordoba</h5>
-          </div>
-        </div>
-      </article>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </section>
-
-<!-- ##### TABLA ###### -->
-    <section class="table-responsive container">
-      <h2 class="text-center" id="tabla">Provincias</h2>
-      <table class="table caption-top table-dark table-hover border text-center align-middle table-responsive mx-lg-auto">
-        <caption class="text-mg-center text-white">Top 5 Provincias con hermosos paisajes.</caption>
-        <thead> 
-          <tr class="table-light">
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Capital</th>
-            <th scope="col">Superficie</th>
-            <th scope="col">Habitantes</th>
-            <th scope="col">Localidades</th>
-            <th scope="col">Gobernador</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Salta</td>
-            <td>Salta</td>
-            <td>155.488 Km<sup>2</sup></td>
-            <td>1.214.441</td>
-            <td>Cachi, Cafayate, Capital, Cerrillos, etc.</td>
-            <td>Gustavo Sáenz</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jujuy</td>
-            <td>San Salvador de Jujuy</td>
-            <td>53.219 Km<sup>2</sup></td>
-            <td>673.307</td>
-            <td>Abra Pampa, Yala, Tumbaya, Uquia, etc.</td>
-            <td>Gerardo Morales</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>San Luis</td>
-            <td>San Luis</td>
-            <td>76.748 Km<sup>2</sup></td>
-            <td>432.310</td>
-            <td>S. Francisco del Monte, Villa Mercedes, Merlo, Lujan, etc.</td>
-            <td>Alberto José Rodríguez Saá</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Mendoza</td>
-            <td>Mendoza</td>
-            <td>148.827 Km<sup>2</sup></td>
-            <td>1.738.929</td>
-            <td>Guaymallen, Potrerillos, San Rafael, Tunuyan, etc.</td>
-            <td>Rodolfo Suarez</td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Cordoba</td>
-            <td>Cordoba</td>
-            <td>165.321 Km<sup>2</sup></td>
-            <td>3.308.876</td>
-            <td>Rio Cuarto, Villa Allende, Calmayo, Unquillo, etc.</td>
-            <td>Juan Schiaretti</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr class="table-light">
-            <td colspan="7" class="fst-italic"><small>*Los datos son del censo 2010</small></td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-  
-    <!-- ######## FORMULARIO ####### -->
-    <section class="container mt-5 separador"> 
-      <article class="mb-lg-4 mb-md-5">
-        <h2>¿Queres agregar una provincia?</h2>
-        <p>Te animamos agregar una provincia que te parezca que no debe faltar en el top de las que tienen el mejor paisaje.</p>
-      </article>
-      <form class="p-2 mx-auto row text-center">
-        <legend class="mb-3" id="form">Agregar Provincia</legend>
-        <label for="lbl-pcia" class="col-lg-3 text-lg-end">Provincia</label>
-        <input type="text" class="col-lg-7" id="lbl-pcia" maxlength="19" placeholder="Ej: Tucumán." required>
-        <p class="form-text">Agrega la provincia.</p> 
-        <label for="lbl-cap" class="col-lg-3 text-lg-end">Capital</label>
-        <input type="text" class="col-lg-7" id="lbl-cap" placeholder="Ej: S.M. de Tucumán" required>
-        <p class="form-text">Agrega la capital.</p>
-        <label for="lbl-sup" class="col-lg-3 text-lg-end">Superficie</label>
-        <input type="number" class="col-lg-7" id="lbl-sup" maxlength="19" placeholder="Ej: 15000" required>
-        <p class="form-text">Agrega la superficie.</p>
-        <label for="lbl-hab" class="col-lg-3 text-lg-end">Habitantes</label>
-        <input type="number" class="col-lg-7" id="lbl-hab" maxlength="7" placeholder="Ej: 200000" required>
-        <p class="form-text">Agrega el N° de habitantes.</p>
-        <label for="lbl-loc" class="col-lg-3 text-lg-end">Localidades</label>
-        <input type="text" class="col-lg-7" id="lbl-loc" maxlength="30" placeholder="Ej: Leales." required>
-        <p class="form-text">Agrega la localidad.</p>
-        <label for="lbl-gob" class="col-lg-3 text-lg-end">Gobernador</label>
-        <input type="text" class="col-lg-7" id="lbl-gob" maxlength="25" placeholder="Ej: Goku." required>
-        <p class="form-text">Agrega el gobernador.</p>
-        <button type="submit" class="form-btn">Sumar a la tabla</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- ####### FOOTER ##### -->
-  <footer class="bg-light bg-opacity-25 p-4">
-    <section class="d-flex flex-column flex-md-row justify-content-md-between">
-      <article>
-        <h2>Contactenos</h2>
-        <p class="m-0">Email</p>
-        <a href="mailto:hola@tusprovincias.com" class="text-decoration-none text-info">hola@tusprovincias.com</a>
-        <p class="m-0">Tel</p>
-        <a href="tel:+54123123" class="text-decoration-none text-info">+54123123</a>
-      </article>
-      <ul class="mt-4 p-2">
-          <li><a href="#" class="text-decoration-none text-info">Sobre nosotros</a></li>
-          <li><a href="#" class="text-decoration-none text-info">Conoce al equipo</a></li>
-          <li><a href="#" class="text-decoration-none text-info">Amigos de TusProvincias.com</a></li>
-      </ul>
-  </section>
-  <p class="m-0 pt-2 text-md-end">&copy Realizado por <a href="#" class="text-decoration-none text-info">Nicolas Cabrera</a></p>
-  </footer>
-
-  <!-- Bootstrap Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

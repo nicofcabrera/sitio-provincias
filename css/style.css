@@ -24,6 +24,7 @@ nav img{
 
 form {
   width: 75%;
+  text-transform:capitalize;
 }
 
 form button{
@@ -32,7 +33,7 @@ form button{
 }
 
 .separador{
-  margin-bottom: 7em;
+  margin-bottom: 2em;
 }
 
 
@@ -56,7 +57,7 @@ form button{
   }
   
   .separador{
-    margin-bottom: 10em;
+    margin-bottom: 4em;
   }
   
 }
