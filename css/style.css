@@ -36,6 +36,14 @@ form button{
   margin-bottom: 2em;
 }
 
+.modalForm{
+  color: black;
+}
+
+.modalForm p{
+  text-align: center;
+  font-style: italic;
+}
 
 /* ############ MEDIAS QUERIES TABLET ######## */
 @media all and (min-width: 768px){

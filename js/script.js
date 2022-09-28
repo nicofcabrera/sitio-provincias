@@ -5,8 +5,10 @@ let dataProv = document.getElementById("lbl-pcia"),
   dataLoc = document.getElementById("lbl-loc"),
   dataGob = document.getElementById("lbl-gob"),
   boton = document.getElementById("button-1"),
-  tablaBody = document.getElementById("table-body");
-;
+  tablaBody = document.getElementById("table-body"),
+  ventModal = document.getElementById('exampleModal'),
+  contModal = document.getElementById('contenido-modal');
+
 
 boton.addEventListener('click', function () {
   console.log('Ejecutando Funcion')
@@ -14,9 +16,9 @@ boton.addEventListener('click', function () {
   let fila = document.createElement('tr')
 
   for (let index = 0; index < array.length; index++) {
-    if (array[index].value == '') {
+    if (array[index].value == '' || array[index].value == ' ') {
       console.log('VACIO')
-      return alert('Tenes un campo vacio')
+      return contModal.textContent= 'Tenes un campo vacio, intentalo otra vez.'     
     } else {
       let celda = document.createElement('td')
       celda.textContent = array[index].value;
@@ -24,6 +26,7 @@ boton.addEventListener('click', function () {
       fila.appendChild(celda)
     }
   }
-  alert('Se agrego exitosamente una provincia. ¡OBSERVA LA TABLA OTRA VEZ!');
-  return tablaBody.appendChild(fila)
+  tablaBody.appendChild(fila)
+  return contModal.innerHTML = `Se agrego exitosamente una provincia. <br> <b>¡OBSERVA LA TABLA OTRA VEZ!</b>`
 })
+

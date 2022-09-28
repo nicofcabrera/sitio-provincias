@@ -316,9 +316,27 @@
           <label for="lbl-gob" class="col-lg-3 text-lg-end">Gobernador</label>
           <input type="text" class="col-lg-7" id="lbl-gob" maxlength="25" placeholder="Ej: Goku."/>
           <p class="form-text">Agrega el gobernador.</p>
-          <button type="reset" class="form-btn" id="button-1">Sumar a la tabla</button>
+          <button type="reset" class="form-btn" id="button-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Sumar a la tabla</button>
         </form>
       </section>
+
+      <!-- ## MODAL ## -->
+      <div class="modal fade modalForm" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h5 class="modal-title text-center" id="exampleModalLabel">¡ATENCION!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <p id="contenido-modal"></p>
+            </div>
+            <!-- <div class="modal-footer boton-modal" >
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="button-2">Ver Tabla</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- ####### FOOTER ##### -->
@@ -359,7 +377,7 @@
       </section>
       <p class="m-0 pt-2 text-md-end">
         &copy Realizado por
-        <a href="#" class="text-decoration-none text-info">Nicolas Cabrera</a>
+        <a href="https://github.com/nicofcabrera" target="_blank" class="text-decoration-none text-info">Nicolas Cabrera</a>
       </p>
     </footer>
 
